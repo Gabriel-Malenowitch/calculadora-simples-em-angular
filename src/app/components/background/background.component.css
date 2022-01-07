@@ -1,0 +1,42 @@
+#background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#red, #blue, #green{
+    position: absolute;
+    z-index: -1;
+}
+#blue, #green{
+    filter: blur(45px);
+}
+#red{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        -45deg, 
+        rgb(38, 58, 235), 
+        rgb(241, 123, 149)
+    );
+}
+#blue{
+    margin: 100px;
+    width: 60%;
+    height: 40%;
+    background-image: linear-gradient(
+        -45deg, 
+        rgb(53, 70, 224), 
+        rgb(48, 150, 116)
+    );
+}
+#green{
+    margin: 100px;
+    width: 60%;
+    height: 130%;
+    background-image: linear-gradient(
+        -45deg, 
+        rgb(226, 61, 32), 
+        rgb(42, 226, 165)
+    );
+}
